@@ -55,12 +55,9 @@ public class Test {
 	 * @param listeEpreuves
 	 */
 	public Test() {
-		super();
 	}
 	
-	public Test(int idTest, String libelle, String description, int duree, int seuil_haut, int seuil_bas) {
-		super();
-		setIdTest(idTest);
+	public Test(String libelle, String description, int duree, int seuil_haut, int seuil_bas) {
 		setLibelle(libelle);
 		setDescription(description);
 		setDuree(duree);
@@ -68,10 +65,9 @@ public class Test {
 		setSeuil_haut(seuil_haut);
 	}
 	
-	public Test(int idTest, String libelle, String description, int duree, int seuil_haut, int seuil_bas,
+	public Test( String libelle, String description, int duree, int seuil_haut, int seuil_bas,
 			List listeSectionTests, List listeEpreuves) {
-		super();
-		setIdTest(idTest);
+	
 		setLibelle(libelle);
 		setDescription(description);
 		setDuree(duree);
