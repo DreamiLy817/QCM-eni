@@ -55,12 +55,9 @@ public class Test {
 	 * @param listeEpreuves
 	 */
 	public Test() {
-		super();
 	}
 	
-	public Test(int idTest, String libelle, String description, int duree, int seuil_haut, int seuil_bas) {
-		super();
-		setIdTest(idTest);
+	public Test(String libelle, String description, int duree, int seuil_haut, int seuil_bas) {
 		setLibelle(libelle);
 		setDescription(description);
 		setDuree(duree);
@@ -68,10 +65,9 @@ public class Test {
 		setSeuil_haut(seuil_haut);
 	}
 	
-	public Test(int idTest, String libelle, String description, int duree, int seuil_haut, int seuil_bas,
+	public Test( String libelle, String description, int duree, int seuil_haut, int seuil_bas,
 			List listeSectionTests, List listeEpreuves) {
-		super();
-		setIdTest(idTest);
+	
 		setLibelle(libelle);
 		setDescription(description);
 		setDuree(duree);
@@ -80,8 +76,31 @@ public class Test {
 		setListeEpreuves(listeEpreuves);
 		setListeSectionTests(listeSectionTests);
 	}
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("Test [idTest=");
+		builder.append(idTest);
+		builder.append(", libelle=");
+		builder.append(libelle);
+		builder.append(", description=");
+		builder.append(description);
+		builder.append(", duree=");
+		builder.append(duree);
+		builder.append(", seuil_haut=");
+		builder.append(seuil_haut);
+		builder.append(", seuil_bas=");
+		builder.append(seuil_bas);
+		builder.append(", listeSectionTests=");
+		builder.append(listeSectionTests);
+		builder.append(", listeEpreuves=");
+		builder.append(listeEpreuves);
+		builder.append("]");
+		return builder.toString();
+	}
 	
 
+	
 	
 	
 	
