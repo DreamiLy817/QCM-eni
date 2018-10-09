@@ -42,7 +42,7 @@ public class QuestionDaoImpl implements QuestionDao {
         	statement.setString(1, question.getEnonce());
         	statement.setString(2, question.getMedia());
         	statement.setLong(3, question.getPoints());
-        	statement.setInt(4, 1);
+        	statement.setInt(4, idTheme);
         	if(statement.executeUpdate()==1){
         	resultSet = statement.getGeneratedKeys();
         		if(resultSet.next()){
