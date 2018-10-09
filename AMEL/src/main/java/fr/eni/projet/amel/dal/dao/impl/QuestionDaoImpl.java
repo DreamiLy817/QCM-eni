@@ -60,9 +60,20 @@ public class QuestionDaoImpl implements QuestionDao {
 	}
 
 	@Override
-	public void update(Question element) throws DaoException {
-		// TODO Auto-generated method stub
-
+	public void update(Question question) throws DaoException {
+		Connection connection = null;
+		PreparedStatement statement = null;
+		ResultSet resultSet = null;
+		try{
+			connection = MSSQLConnectionFactory.get();
+			
+		}catch(SQLException e){
+			throw new DaoException(e.getMessage(),e);
+		}
+		finally{
+			ResourceUtil.safeClose(resultSet,statement, connection)
+		}
+		
 	}
 
 	@Override
