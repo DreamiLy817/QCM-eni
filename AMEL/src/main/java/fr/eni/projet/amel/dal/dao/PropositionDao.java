@@ -1,5 +1,5 @@
 package fr.eni.projet.amel.dal.dao;
 
-public class PropositionDao {
+public class PropositionDao extends GenericDao{
 
 }
