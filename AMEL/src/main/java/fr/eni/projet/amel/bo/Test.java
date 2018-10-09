@@ -80,8 +80,31 @@ public class Test {
 		setListeEpreuves(listeEpreuves);
 		setListeSectionTests(listeSectionTests);
 	}
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("Test [idTest=");
+		builder.append(idTest);
+		builder.append(", libelle=");
+		builder.append(libelle);
+		builder.append(", description=");
+		builder.append(description);
+		builder.append(", duree=");
+		builder.append(duree);
+		builder.append(", seuil_haut=");
+		builder.append(seuil_haut);
+		builder.append(", seuil_bas=");
+		builder.append(seuil_bas);
+		builder.append(", listeSectionTests=");
+		builder.append(listeSectionTests);
+		builder.append(", listeEpreuves=");
+		builder.append(listeEpreuves);
+		builder.append("]");
+		return builder.toString();
+	}
 	
 
+	
 	
 	
 	

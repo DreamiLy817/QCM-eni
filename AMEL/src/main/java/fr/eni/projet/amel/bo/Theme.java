@@ -42,6 +42,21 @@ public class Theme {
 	}
 	
 	
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("Theme [idTheme=");
+		builder.append(idTheme);
+		builder.append(", libelle=");
+		builder.append(libelle);
+		builder.append(", listeQuestions=");
+		builder.append(listeQuestions);
+		builder.append("]");
+		return builder.toString();
+	}
+	
+	
+	
 	
 	
 
